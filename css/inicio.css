@@ -1,0 +1,120 @@
+@import url(variables.css);
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+section#inicio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.panels {
+    width: 48%;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.panels button:hover {
+    background-color: var(--color-primario);
+}
+
+.panels-complete{
+    background-color: var(--color-primario);
+    width: 100%;
+}
+
+.panels-complete a.button, button{
+    background-color:var(--color-terciario);
+    color: #fff;
+    width: 88%;
+    padding: 15px 20px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.panels-complete a.button:hover,.panels-complete button:hover {
+    background-color: var(--color-secundario) ;
+    color: var(--color-terciario);
+}
+
+.panels-tarifa-container{
+    display: flex ;
+    justify-content: space-around;
+    /* padding: 20px; */
+
+}
+
+.panels-tarifa{
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+    width: 24%;
+    
+}
+
+.panels-tarifa table{
+    text-align: left;
+    color: rgb(102, 101, 100);
+    margin-bottom: 20px;
+}
+.panels-tarifa table tr td{
+    padding: 5px 8px 5px 0px;
+}
+.panels-tarifa a{
+    color: var(--color-secundario); 
+    font-size: 1em;
+    text-decoration: none;
+}
+.panels-tarifa:hover {
+    transform: scale(1.01);
+    z-index: 100;
+}
+
+@media only screen and (max-width: 1500px) {
+    .panels-tarifa-container{
+        display: inline-block;
+        /* justify-content: space-between;
+        padding: 20px; */
+    
+    }
+    .panels{
+        width: 100%;
+       
+    }
+    .panels-tarifa-container .panels-tarifa {
+        width: 48%;
+        margin:10px; 
+    }
+}
+@media only screen and (max-width: 1370px) {
+
+    .panels-tarifa-container{
+        display: inline-block;
+
+    }
+
+    .panels-tarifa-container .panels-tarifa {
+        width: 46%;
+        margin:10px;
+    }
+}
+@media only screen and (max-width: 800px) {
+
+    .panels-tarifa-container{
+        display: inline-block;
+    }
+
+    .panels-tarifa-container .panels-tarifa {
+        width: 96%;
+    }
+}

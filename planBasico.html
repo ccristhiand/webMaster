@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <title>MasterWeb</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 style="text-align: left; color: var(--color-secundario);">web master</h1>
+            <nav style="text-align: right;">
+                <button id="toggleMenu" aria-label="Toggle menu">&#9776; Menú</button>
+                <ul class="show">
+                    <li><a href="index.html">HOME</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <!-- <h2>¡Bienvenido a Web master!</h2> -->
+        <section id="inicio" class="container inicio" style="margin-top: 150px;">
+
+            <div class="panels panels-complete" style="text-align: left; margin-bottom: 0px;">
+                <h3 style="color: var(--color-terciario); font-size: 2em;">Elige un periodo</h3>
+            </div>
+
+            <div class="panels panels-complete panels-tarifa-container">
+                <div class="panels panels-tarifa">
+                    <h4 style="font-size: 1.5em; color: var(--color-secundario);">1 MES</h4>
+                    <p style="color: var(--color-secundario); font-size: 1.5em; font-weight: bold;">S/49.90 X MES</p>
+                    <a href="#" class="button" onmouseover="cambiarImagen('assets/img/whatsappPurple.png')" onmouseout="restaurarImagen()">
+                        <img src="assets/img/whatsappWhite.png" width="15px" alt="" style="margin-right :5px ;" > Obtener Servicio
+                    </a>
+
+                </div>
+
+                <div class="panels panels-tarifa">
+                    <h4 style="font-size: 1.5em; color: var(--color-secundario);">3 MESES</h4>
+                    <p style="color: var(--color-secundario); font-size: 1.5em; font-weight: bold;">S/39.90 X MES</p>
+                    <a href="#" class="button"  onmouseover="cambiarImagen('assets/img/whatsappPurple.png')" onmouseout="restaurarImagen()">
+                        <img src="assets/img/whatsappWhite.png" width="15px" alt="" style="margin-right :5px ;" > Obtener Servicio
+                    </a>
+
+                </div>
+                <div class="panels panels-tarifa">
+                    <h4 style="font-size: 1.5em; color: var(--color-secundario);">6 MESES</h4>
+                    <p style="color: var(--color-secundario); font-size: 1.5em; font-weight: bold;">S/29.90 X MES</p>
+                    <a href="#" class="button" onmouseover="cambiarImagen('assets/img/whatsappPurple.png')" onmouseout="restaurarImagen()">
+                        <img src="assets/img/whatsappWhite.png" width="15px" alt="" style="margin-right :5px ;" > Obtener Servicio
+                    </a>
+
+                </div>
+                <div class="panels panels-tarifa">
+                    <h4 style="font-size: 1.5em; color: var(--color-secundario);">1 AÑO</h4>
+                    <p style="color: var(--color-secundario); font-size: 1.5em; font-weight: bold;">S/19.90 X MES</p>
+                    <a href="#" class="button" onmouseover="cambiarImagen('assets/img/whatsappPurple.png')" onmouseout="restaurarImagen()">
+                        <img src="assets/img/whatsappWhite.png" width="15px" alt="" style="margin-right :5px ;" > Obtener Servicio
+                    </a>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p style="color: var(--color-secundario);">&copy; 2023 Nombre de tu empresa</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
